@@ -1,0 +1,16 @@
+<suite name="Test - Suite">
+<test name="Tools QA">
+<classes >
+<class name="ROAutomation.LaunchApp"></class>
+ <class name="ROAutomation.Manufacture"></class> 
+
+</classes>
+</test>
+<listeners>
+
+ <!-- <listener class-name="utility.Listener"></listener> -->
+ <listener class-name="utility.TestNGEmailableReport2"></listener>
+
+ </listeners>
+
+</suite>

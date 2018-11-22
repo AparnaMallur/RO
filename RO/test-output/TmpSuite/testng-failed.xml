@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TmpSuite]">
+  <test name="Test - Suite(failed)">
+    <classes>
+      <class name="ROAutomation.Manufacture">
+        <methods>
+          <include name="checkGSTFormatValidation"/>
+          <include name="checkGSTUniqueValidation"/>
+          <include name="checkIIFScFormatValidation"/>
+          <include name="AddManufacturer"/>
+          <include name="checkMobileNumberFormatValidation"/>
+          <include name="TestRequiredFieldsValidation"/>
+          <include name="checkMobileNumberNumericValidation"/>
+          <include name="checkAcNoFormatValidation"/>
+        </methods>
+      </class> <!-- ROAutomation.Manufacture -->
+    </classes>
+  </test> <!-- Test - Suite(failed) -->
+</suite> <!-- Failed suite [TmpSuite] -->

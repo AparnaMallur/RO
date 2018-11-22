@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>TestNG:  Tools QA</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tools QA</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 13 18:02:57 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>87 seconds (87757 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ROAutomation.Manufacture.AddManufacturer()'><b>AddManufacturer</b><br>Test class: ROAutomation.Manufacture<br>Test method: Enter All fields and Save and check all field values are saved<br/>
+<a href="#Output-824900551" onClick='toggleBox("Output-824900551", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-824900551" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-824900551">
+Search for Manufacture name Added :RO Water
+<br/>
+Search Returned 1Records<br/>
+Now Check Each column values has Entered value 
+<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.LaunchApp.Login()'><b>Login</b><br>Test class: ROAutomation.LaunchApp<br>Test method: Login Page</td>
+<td></td>
+<td>56</td>
+<td>ROAutomation.LaunchApp@490d6c15</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.TestRequiredFieldsValidation()'><b>TestRequiredFieldsValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing Required Field Validations</td>
+<td></td>
+<td>1</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkAcNoFormatValidation()'><b>checkAcNoFormatValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing A/C No Format Validations</td>
+<td></td>
+<td>3</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkGSTFormatValidation()'><b>checkGSTFormatValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing GST Format Validations</td>
+<td></td>
+<td>2</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkGSTUniqueValidation()'><b>checkGSTUniqueValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing GST is Unique only Validations</td>
+<td></td>
+<td>2</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkIIFScFormatValidation()'><b>checkIIFScFormatValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing IIFSC Format Validations</td>
+<td></td>
+<td>2</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkMobileNumberFormatValidation()'><b>checkMobileNumberFormatValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing Mobile No accepts Ten Number only Validations</td>
+<td></td>
+<td>2</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+<tr>
+<td title='ROAutomation.Manufacture.checkMobileNumberNumericValidation()'><b>checkMobileNumberNumericValidation</b><br>Test class: ROAutomation.Manufacture<br>Test method: Testing Mobile No accepts Number only Validations</td>
+<td></td>
+<td>2</td>
+<td>ROAutomation.Manufacture@1761e840</td></tr>
+</table><p>
+</body>
+</html>

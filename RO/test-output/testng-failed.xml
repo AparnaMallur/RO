@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test - Suite]">
+  <listeners>
+    <listener class-name="utility.Listener"/>
+    <listener class-name="utility.TestNGEmailableReport2"/>
+  </listeners>
+  <test name="Tools QA(failed)">
+    <classes>
+      <class name="ROAutomation.Manufacture">
+        <methods>
+          <include name="AddManufacturer"/>
+        </methods>
+      </class> <!-- ROAutomation.Manufacture -->
+    </classes>
+  </test> <!-- Tools QA(failed) -->
+</suite> <!-- Failed suite [Test - Suite] -->
