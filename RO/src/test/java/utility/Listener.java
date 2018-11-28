@@ -51,6 +51,7 @@ public void CreateReport () throws Exception {
 		bw.write("<body>");
 		bw.write("<font face='Tahana' size=2>" + "\n");
 		bw.write("<u><h1 align='center'>" + "Test Execution Report" + "</h1><u>" + "\n");
+		//bw.write("<div id=\"id01\" class=\"w3-modal\">";
 		bw.flush();
 		bw.close();
 	}
@@ -89,6 +90,7 @@ public void CreateReport () throws Exception {
 	bw1.write("<td bgcolor='#FFFFDC' align='center' ><b><font color='#000000' face='Tahema' size='2' >" +stDt+ "</font></b></td>>");
 	bw1.write("<td bgcolor='#FFFFDC' align='center' ><b><font color='#000000' face='Tahema' size='2' >" +EnDt+ "</font></b></td>>");
 	bw1.write("<td bgcolor='#FFFFDC' align='center' ><b><font color='#000000' face='Tahema' size='2' >" +Result+ "</font></b></td>>");
+	bw1.write("<td bgcolor='#FFFFDC' align='center' ><b><font color='#000000' face='Tahema' size='2' > <button onclick=\" document.getElementById(\'id\')..style.display=\'block\'class=\"w3-button w3-black\" \"> Open Screenshot </font></b></td>>");
 	bw1.write("</tr>"+"\n");
 	bw1.write("</bod>"+"\n");
 	bw1.write("</html");

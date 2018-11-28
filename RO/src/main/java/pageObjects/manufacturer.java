@@ -129,7 +129,7 @@ public class manufacturer {
 		return element;
 		
 	}
-	public static WebElement tblVehicleList(WebDriver driver) {
+	public static WebElement tblVendorList(WebDriver driver) {
 		element=driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/table"));
 		////*[@id="page-wrapper"]/div[3]/div/div/div[2]/div/table
 		

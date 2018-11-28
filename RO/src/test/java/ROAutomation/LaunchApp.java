@@ -38,8 +38,7 @@ Manufacture.init(driver);
 	 // if( driver !=null) {
 	 
 	 
-	  VehicleMaster.init(driver);//}
-	  VehicleMaster.AddVehicle();
+	
 	  
   }
   public static WebDriver getDriver() {

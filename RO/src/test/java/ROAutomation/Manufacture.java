@@ -55,7 +55,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 	manufacturer.SearchValue(driver1).sendKeys(manufacture_Name);
 	manufacturer.btnSearch(driver1).click();
 //	Reporter.log("Search for Manufacture name Added :"+manufacture_Name + "\n");
-		  List<WebElement> listOfRows = Vehicle.tblVehicleList(driver1).findElements(By.tagName("tr"));
+		  List<WebElement> listOfRows = manufacturer.tblVendorList(driver1).findElements(By.tagName("tr"));
 		  
 		int RowCount= listOfRows.size();
 		System.out.println("The Row Count is " + RowCount);

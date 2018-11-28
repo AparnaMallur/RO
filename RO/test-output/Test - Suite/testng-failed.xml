@@ -13,6 +13,9 @@
       </class> <!-- ROAutomation.Manufacture -->
       <class name="ROAutomation.LaunchApp">
         <methods>
+          <include name="TestManufacturer"/>
+          <include name="Login"/>
+          <include name="Testvehicle"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- ROAutomation.LaunchApp -->
