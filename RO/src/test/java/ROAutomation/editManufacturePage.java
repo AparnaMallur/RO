@@ -54,7 +54,7 @@ WebElement msg=driver1.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/di
 
 	
 	Reporter.log("Search for Manufacture name Added :"+manufacture_Name + "\n");
-		  List<WebElement> listOfRows = Vehicle.tblVehicleList(driver1).findElements(By.tagName("tr"));
+		  List<WebElement> listOfRows = manufacturer.tblVendorList(driver1).findElements(By.tagName("tr"));
 		  
 		int RowCount= listOfRows.size();
 		System.out.println("The Row Count is " + RowCount);

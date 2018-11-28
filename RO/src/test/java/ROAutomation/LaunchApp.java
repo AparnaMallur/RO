@@ -36,10 +36,7 @@ Manufacture.init(driver);
   public void Testvehicle() throws Exception
   {
 	 // if( driver !=null) {
-	 
-	 
-	 
-	  
+	
   }
   public static WebDriver getDriver() {
 	  return driver;

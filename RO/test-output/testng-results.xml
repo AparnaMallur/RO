@@ -8,23 +8,23 @@
       <![CDATA[<br><img src='C:\Users\Android4\Desktop\SCREENSHOTForManufacture\SCREENSHOTTestvehicle.png' height='400' width='400' >]]>
     </line>
   </reporter-output>
-  <suite name="Test - Suite" duration-ms="20752" started-at="2018-11-28T09:59:49Z" finished-at="2018-11-28T10:00:10Z">
+  <suite name="Test - Suite" duration-ms="33015" started-at="2018-11-28T10:14:00Z" finished-at="2018-11-28T10:14:33Z">
     <groups>
     </groups>
-    <test name="RO" duration-ms="20752" started-at="2018-11-28T09:59:49Z" finished-at="2018-11-28T10:00:10Z">
+    <test name="RO" duration-ms="33015" started-at="2018-11-28T10:14:00Z" finished-at="2018-11-28T10:14:33Z">
       <class name="ROAutomation.LaunchApp">
-        <test-method status="PASS" signature="Login()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="Login" duration-ms="17900" started-at="2018-11-28T15:29:49Z" description="Login Page" finished-at="2018-11-28T15:30:07Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="beforeClass" is-config="true" duration-ms="16" started-at="2018-11-28T15:44:00Z" finished-at="2018-11-28T15:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="Login" duration-ms="30107" started-at="2018-11-28T15:44:00Z" description="Login Page" finished-at="2018-11-28T15:44:30Z">
           <reporter-output>
             <line>
               <![CDATA[<br><img src='C:\Users\Android4\Desktop\SCREENSHOTForManufacture\SCREENSHOTLogin.png' height='400' width='400' >]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-11-28T15:29:49Z" finished-at="2018-11-28T15:29:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="TestManufacturer()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="TestManufacturer" duration-ms="2202" started-at="2018-11-28T15:30:08Z" description="Log into Application" finished-at="2018-11-28T15:30:10Z">
+        <test-method status="FAIL" signature="TestManufacturer()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="TestManufacturer" duration-ms="2226" started-at="2018-11-28T15:44:30Z" description="Log into Application" finished-at="2018-11-28T15:44:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Manufacturer Added Successfully!] but found []]]>
@@ -37,7 +37,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
 	at ROAutomation.Manufacture.AddManufacturer(Manufacture.java:50)
-	at ROAutomation.LaunchApp.TestManufacturer(LaunchApp.java:53)
+	at ROAutomation.LaunchApp.TestManufacturer(LaunchApp.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestManufacturer -->
-        <test-method status="PASS" signature="Testvehicle()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="Testvehicle" duration-ms="2" started-at="2018-11-28T15:30:10Z" description="Log into Application" finished-at="2018-11-28T15:30:10Z">
+        <test-method status="PASS" signature="Testvehicle()[pri:0, instance:ROAutomation.LaunchApp@724af044]" name="Testvehicle" duration-ms="2" started-at="2018-11-28T15:44:32Z" description="Log into Application" finished-at="2018-11-28T15:44:32Z">
           <reporter-output>
             <line>
               <![CDATA[<br><img src='C:\Users\Android4\Desktop\SCREENSHOTForManufacture\SCREENSHOTTestvehicle.png' height='400' width='400' >]]>
@@ -77,7 +77,7 @@
         </test-method> <!-- Testvehicle -->
       </class> <!-- ROAutomation.LaunchApp -->
       <class name="ROAutomation.vehicle">
-        <test-method status="FAIL" signature="ownernamevalidation()[pri:0, instance:ROAutomation.vehicle@548a9f61]" name="ownernamevalidation" duration-ms="2" started-at="2018-11-28T15:30:10Z" description="validation" finished-at="2018-11-28T15:30:10Z">
+        <test-method status="FAIL" signature="ownernamevalidation()[pri:0, instance:ROAutomation.vehicle@548a9f61]" name="ownernamevalidation" duration-ms="4" started-at="2018-11-28T15:44:33Z" description="validation" finished-at="2018-11-28T15:44:33Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

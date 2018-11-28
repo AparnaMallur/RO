@@ -9,8 +9,8 @@ public class Vehicle {
 	 public static WebElement vehicleMenu(WebDriver driver){
 		 
          element = driver.findElement(By.xpath(" //*[@id=\"side-menu\"]/li[3]/a/span[1]"));
-         											//*[@id="side-menu"]/li[3]/a/span[1]
-    
+      
+       //*[@id="side-menu"]/li[3]/a/span[1]
       
          return element; 
          }
@@ -192,11 +192,6 @@ public static WebElement txt_veh_expda(WebDriver driver){
 
     }
 
-public static WebElement tblVehicleList(WebDriver driver) {
-	element=driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/table"));
-	
-	return element;
-	
-}
+ 
 }
 
