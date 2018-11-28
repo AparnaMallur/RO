@@ -5,12 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Constants.Constant;
 import Constants.utility;
 import pageObjects.LoginPage;
-
+@Test(description="Log into Application")
 public class LaunchApp {
 	
 	public static WebDriver driver = null;
@@ -29,14 +30,32 @@ LoginPage.txtbx_Password(driver).sendKeys("password");
 LoginPage.btn_LogIn(driver).click();
 System.out.println(Constants.Constant.Path_TestData+Constants.Constant.File_TestData+"and"+ Constants.Constant.sheetName);
 utility.setExcelFile(Constants.Constant.Path_TestData+Constants.Constant.File_TestData, Constants.Constant.sheetName);
-//Manufacture.init(driver);
-vehicle.init(driver);
+Manufacture.init(driver);
   }
   //@Test
- 
+  public void Testvehicle() throws Exception
+  {
+	 // if( driver !=null) {
+	 
+	 
+	 
+	  
+  }
   public static WebDriver getDriver() {
 	  return driver;
   }
   //@Test
-  
+  public void TestManufacturer() throws Exception
+  {
+	 // if( driver !=null) {
+	 
+	 Manufacture.init(driver);
+	 Manufacture.AddManufacturer();
+	
+	  
+  }
+  @BeforeClass
+  public void beforeClass() {
+    System.out.println("BeforeClass");
+  }
 }

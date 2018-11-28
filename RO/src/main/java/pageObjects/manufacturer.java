@@ -10,7 +10,9 @@ public class manufacturer {
 	 public static WebElement manufacturerMenu(WebDriver driver){
 		 
        element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[8]/a/span[1]"));
-                               
+     //*[@id="side-menu"]/li[6]/a
+     //*[@id="side-menu"]/li[7]/a
+     //*[@id="side-menu"]/li[6]/a                        
        return element;
 
 	
@@ -18,8 +20,9 @@ public class manufacturer {
   public static WebElement Addmanufacturer(WebDriver driver){
 		 
          element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[8]/ul/li[1]/a"));
+       //*[@id="side-menu"]/li[8]/a
                                                
- 
+       //*[@id="side-menu"]/li[6]/ul/li[1]/a
          return element;
  
   }

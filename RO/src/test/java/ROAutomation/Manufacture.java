@@ -1,4 +1,4 @@
-/*package ROAutomation;
+package ROAutomation;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ public class Manufacture {
 	 	  driver1=driver;
 	 	;
   }
-  @Test(description="Enter All fields and Save and check all field values are saved")
+  @Test(description="Add All fields and Save")
   public static void AddManufacturer() throws Exception {
 	 
 	
@@ -117,7 +117,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 	  manufacturer.txt_mfg_ifsc_code(driver1).sendKeys(manufacture_iifsc_code);
 	  
   }
-  @Test(description="Testing Mobile No accepts Number only Validations")
+ // @Test(description="Testing Mobile No accepts Number only Validations")
   public static void checkMobileNumberNumericValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -129,7 +129,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing Mobile No accepts Ten Number only Validations")
+ // @Test(description="Testing Mobile No accepts Ten Number only Validations")
   public static void checkMobileNumberFormatValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -142,7 +142,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing GST is Unique only Validations")
+ // @Test(description="Testing GST is Unique only Validations")
   public static void checkGSTUniqueValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -155,7 +155,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing GST Format Validations")
+ // @Test(description="Testing GST Format Validations")
   public static void checkGSTFormatValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -168,7 +168,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing IIFSC Format Validations")
+ // @Test(description="Testing IIFSC Format Validations")
   public static void checkIIFScFormatValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -181,7 +181,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing A/C No Format Validations")
+  //@Test(description="Testing A/C No Format Validations")
   public static void checkAcNoFormatValidation() throws Exception {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -194,7 +194,7 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 		
 		
   }
-  @Test(description="Testing Required Field Validations")
+ // @Test(description="Testing Required Field Validations")
   public static void TestRequiredFieldsValidation() {
 		manufacturer.manufacturerMenu(driver1).click();
 		manufacturer.Addmanufacturer(driver1).click();
@@ -202,4 +202,4 @@ Assert.assertEquals(messg,Constant.AddManufacture);
 	
 }
 }
-*/
+

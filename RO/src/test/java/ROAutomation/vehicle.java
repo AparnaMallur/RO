@@ -173,7 +173,7 @@ public class vehicle{
 		 
 	 }
 	//for vehiclenumber validation//
-	@Test
+	@Test(description="validation")
 	 public static void ownernamevalidation() throws Exception {
 		 
 		 pageObjects.Vehicle.vehicleMenu(driver1).click();
@@ -190,5 +190,23 @@ public class vehicle{
 			}
 		 
 	 }
+	//for mobile 9 number validation//
+ public static void ninedigitvalidation() throws Exception {
+		 
+		 pageObjects.Vehicle.vehicleMenu(driver1).click();
+			pageObjects.Vehicle.AddVehicle(driver1).click();
+
+			pageObjects.Vehicle. txt_veh_owner_mob_no(driver1).sendKeys("999999999");
+			pageObjects.Vehicle.btn_Submit(driver1).click();
+			String errormsg2=pageObjects.Vehicle.txt_veh_owner_mobilenumber(driver1).getText();
+			try {
+				Assert.assertTrue(errormsg2 .contains(Constants.Constant.tendigit));
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		 
+	 }
+	
 	
 }

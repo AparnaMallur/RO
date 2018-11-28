@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_-_Suite">
-              <span class="suite-name border-passed">Test - Suite</span>
+              <span class="suite-name border-failed">Test - Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_-_Suite" class="hide-methods failed suite-Test_-_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_-_Suite -->
+                      <a href="#" panel-name="suite-Test_-_Suite" class="show-methods failed suite-Test_-_Suite"> (show)</a> <!-- show-methods failed suite-Test_-_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_-_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_-_Suite" title="ROAutomation.LaunchApp" hash-for-method="TestManufacturer">TestManufacturer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_-_Suite" title="ROAutomation.vehicle" hash-for-method="ownernamevalidation">ownernamevalidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_-_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +125,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_-_Suite" title="ROAutomation.vehicle" hash-for-method="ownernamevalidation">ownernamevalidation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_-_Suite" title="ROAutomation.LaunchApp" hash-for-method="Testvehicle">Testvehicle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_-_Suite -->
@@ -121,6 +140,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_-_Suite" class="panel Test_-_Suite">
+          <div class="suite-Test_-_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ROAutomation.vehicle</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ownernamevalidation">
+                  </a> <!-- ownernamevalidation -->
+                  <span class="method-name">ownernamevalidation</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at pageObjects.Vehicle.vehicleMenu(Vehicle.java:11)
+	at ROAutomation.vehicle.ownernamevalidation(vehicle.java:179)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_-_Suite-class-failed -->
+          <div class="suite-Test_-_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ROAutomation.LaunchApp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestManufacturer">
+                  </a> <!-- TestManufacturer -->
+                  <span class="method-name">TestManufacturer</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Manufacturer Added Successfully!] but found []
+	at ROAutomation.Manufacture.AddManufacturer(Manufacture.java:50)
+	at ROAutomation.LaunchApp.TestManufacturer(LaunchApp.java:53)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Log into Application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_-_Suite-class-failed -->
           <div class="suite-Test_-_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -136,19 +199,13 @@
 (Login Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_-_Suite-class-passed -->
-          <div class="suite-Test_-_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">ROAutomation.vehicle</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ownernamevalidation">
-                  </a> <!-- ownernamevalidation -->
-                  <span class="method-name">ownernamevalidation</span>
+                  <a name="Testvehicle">
+                  </a> <!-- Testvehicle -->
+                  <span class="method-name">Testvehicle</span>
+                  <em>
+(Log into Application)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,14 +221,14 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Test - Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;utility.TestNGEmailableReport2&quot;/&gt;
+    &lt;listener class-name=&quot;utility.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Tools QA&quot;&gt;
+  &lt;test name=&quot;RO&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ROAutomation.LaunchApp&quot;/&gt;
       &lt;class name=&quot;ROAutomation.vehicle&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Tools QA --&gt;
+  &lt;/test&gt; &lt;!-- RO --&gt;
 &lt;/suite&gt; &lt;!-- Test - Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,7 +240,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Tools QA (2 classes)</span>
+                <span class="test-name">RO (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,20 +266,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'ROAutomation.LaunchApp')
-data.setCell(0, 3, 13860);
+data.setCell(0, 3, 17900);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ownernamevalidation')
-data.setCell(1, 2, 'ROAutomation.vehicle')
-data.setCell(1, 3, 1456);
+data.setCell(1, 1, 'TestManufacturer')
+data.setCell(1, 2, 'ROAutomation.LaunchApp')
+data.setCell(1, 3, 2202);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Testvehicle')
+data.setCell(2, 2, 'ROAutomation.LaunchApp')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ownernamevalidation')
+data.setCell(3, 2, 'ROAutomation.vehicle')
+data.setCell(3, 3, 2);
 window.suiteTableData['Test_-_Suite']= { tableData: data, tableDiv: 'times-div-Test_-_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Test_-_Suite">
               </div> <!-- times-div-Test_-_Suite -->
             </div> <!-- times-div -->
@@ -233,6 +298,18 @@ return data;
             <span class="header-content">Reporter output for Test - Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br><img src='C:\Users\Android4\Desktop\SCREENSHOTForManufacture\SCREENSHOTLogin.png' height='400' width='400' ></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Testvehicle</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br><img src='C:\Users\Android4\Desktop\SCREENSHOTForManufacture\SCREENSHOTTestvehicle.png' height='400' width='400' ></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Test_-_Suite" class="panel">
@@ -253,12 +330,28 @@ return data;
                 <span class="method-name">Login</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestManufacturer</span>
+                <span class="method-start">18221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Testvehicle</span>
+                <span class="method-start">20427 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ROAutomation.vehicle</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ownernamevalidation</span>
-                <span class="method-start">13860 ms</span>
+                <span class="method-start">20731 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
