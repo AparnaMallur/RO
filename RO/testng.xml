@@ -2,7 +2,7 @@
 <test name="Tools QA">
 <classes >
 <class name="ROAutomation.LaunchApp"></class>
- <class name="ROAutomation.Manufacture"></class> 
+ <class name="ROAutomation.vehicle"></class> 
 
 </classes>
 </test>

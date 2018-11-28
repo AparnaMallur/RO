@@ -2,16 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Test - Suite]">
   <listeners>
-    <listener class-name="utility.Listener"/>
     <listener class-name="utility.TestNGEmailableReport2"/>
   </listeners>
   <test name="Tools QA(failed)">
     <classes>
-      <class name="ROAutomation.Manufacture">
+      <class name="ROAutomation.vehicle">
         <methods>
-          <include name="AddManufacturer"/>
+          <include name="mobilevalidation"/>
         </methods>
-      </class> <!-- ROAutomation.Manufacture -->
+      </class> <!-- ROAutomation.vehicle -->
     </classes>
   </test> <!-- Tools QA(failed) -->
 </suite> <!-- Failed suite [Test - Suite] -->

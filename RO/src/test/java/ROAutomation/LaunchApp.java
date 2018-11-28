@@ -19,7 +19,7 @@ public class LaunchApp {
   public void Login() throws Exception {
 	
 	  
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Android4\\Downloads\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\abc\\Desktop\\All Data\\vidya\\demo\\chromedriver_win32\\chromedriver.exe");
 		 driver=new ChromeDriver();
 		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 driver.get(Constant.URL);
@@ -29,29 +29,14 @@ LoginPage.txtbx_Password(driver).sendKeys("password");
 LoginPage.btn_LogIn(driver).click();
 System.out.println(Constants.Constant.Path_TestData+Constants.Constant.File_TestData+"and"+ Constants.Constant.sheetName);
 utility.setExcelFile(Constants.Constant.Path_TestData+Constants.Constant.File_TestData, Constants.Constant.sheetName);
-Manufacture.init(driver);
+//Manufacture.init(driver);
+vehicle.init(driver);
   }
   //@Test
-  public void Testvehicle() throws Exception
-  {
-	 // if( driver !=null) {
-	 
-	 
-	  VehicleMaster.init(driver);//}
-	  VehicleMaster.AddVehicle();
-	  
-  }
+ 
   public static WebDriver getDriver() {
 	  return driver;
   }
   //@Test
-  public void TestManufacturer() throws Exception
-  {
-	 // if( driver !=null) {
-	 
-	 Manufacture.init(driver);
-	 Manufacture.AddManufacturer();
-	
-	  
-  }
+  
 }

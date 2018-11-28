@@ -9,7 +9,7 @@ public class Product {
 	private static WebElement element = null;
 	 public static WebElement ProductMenu(WebDriver driver){
 		 
-       element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[7]/a/span[1]"));
+       element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]/a/span[1]"));
      
        return element;
 	
@@ -17,11 +17,18 @@ public class Product {
 }
    public static WebElement AddProduct(WebDriver driver){
 		 
-         element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[7]/ul/li[1]/a"));
+         element = driver.findElement(By.xpath("//*[@id=\"side-menu\"]/li[4]/ul/li[1]/a"));
  
          return element;
  
   }
+   public static WebElement txt_searchValue(WebDriver driver){
+		 
+	    element = driver.findElement(By.id("searchValue"));
+
+	    return element;
+
+	    }
     public static WebElement txt_prod_name(WebDriver driver){
 	 
     element = driver.findElement(By.id("prod_name"));
@@ -57,16 +64,23 @@ public class Product {
         return element;
 
         }
+    public static WebElement txt_opening_stock(WebDriver driver){
+    	 
+        element = driver.findElement(By.id("opening_stock"));
+
+        return element;
+
+        }
     public static WebElement AddProductReset(WebDriver driver){
 		 
-        element = driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/form/div[1]/div[6]/div[2]/button[1]"));
+        element = driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/form/div[1]/div[7]/div[2]/button[1]"));
 
         return element;
 
  }
     public static WebElement AddProductSubmit(WebDriver driver){
 		 
-        element = driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/form/div[1]/div[6]/div[2]/button[2]"));
+        element = driver.findElement(By.xpath("//*[@id=\"page-wrapper\"]/div[3]/div/div/div[2]/div/form/div[1]/div[7]/div[2]/button[2]"));
 
         return element;
 

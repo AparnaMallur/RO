@@ -1,73 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Search for Manufacture name Added :RO Water
-]]>
-    </line>
-    <line>
-      <![CDATA[Search Returned 1Records]]>
-    </line>
-    <line>
-      <![CDATA[Now Check Each column values has Entered value 
-]]>
-    </line>
   </reporter-output>
-  <suite name="Test - Suite" duration-ms="87757" started-at="2018-11-13T12:32:57Z" finished-at="2018-11-13T12:34:25Z">
+  <suite name="Test - Suite" duration-ms="15332" started-at="2018-11-28T07:06:36Z" finished-at="2018-11-28T07:06:51Z">
     <groups>
     </groups>
-    <test name="Tools QA" duration-ms="87757" started-at="2018-11-13T12:32:57Z" finished-at="2018-11-13T12:34:25Z">
-      <class name="ROAutomation.Manufacture">
-        <test-method status="PASS" signature="AddManufacturer()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="AddManufacturer" duration-ms="12854" started-at="2018-11-13T18:03:53Z" description="Enter All fields and Save and check all field values are saved" finished-at="2018-11-13T18:04:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Search for Manufacture name Added :RO Water
-]]>
-            </line>
-            <line>
-              <![CDATA[Search Returned 1Records]]>
-            </line>
-            <line>
-              <![CDATA[Now Check Each column values has Entered value 
-]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddManufacturer -->
-        <test-method status="PASS" signature="TestRequiredFieldsValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="TestRequiredFieldsValidation" duration-ms="1630" started-at="2018-11-13T18:04:06Z" description="Testing Required Field Validations" finished-at="2018-11-13T18:04:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestRequiredFieldsValidation -->
-        <test-method status="PASS" signature="checkAcNoFormatValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkAcNoFormatValidation" duration-ms="3344" started-at="2018-11-13T18:04:08Z" description="Testing A/C No Format Validations" finished-at="2018-11-13T18:04:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAcNoFormatValidation -->
-        <test-method status="PASS" signature="checkGSTFormatValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkGSTFormatValidation" duration-ms="2934" started-at="2018-11-13T18:04:11Z" description="Testing GST Format Validations" finished-at="2018-11-13T18:04:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkGSTFormatValidation -->
-        <test-method status="PASS" signature="checkGSTUniqueValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkGSTUniqueValidation" duration-ms="2638" started-at="2018-11-13T18:04:14Z" description="Testing GST is Unique only Validations" finished-at="2018-11-13T18:04:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkGSTUniqueValidation -->
-        <test-method status="PASS" signature="checkIIFScFormatValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkIIFScFormatValidation" duration-ms="2671" started-at="2018-11-13T18:04:16Z" description="Testing IIFSC Format Validations" finished-at="2018-11-13T18:04:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkIIFScFormatValidation -->
-        <test-method status="PASS" signature="checkMobileNumberFormatValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkMobileNumberFormatValidation" duration-ms="2636" started-at="2018-11-13T18:04:19Z" description="Testing Mobile No accepts Ten Number only Validations" finished-at="2018-11-13T18:04:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkMobileNumberFormatValidation -->
-        <test-method status="PASS" signature="checkMobileNumberNumericValidation()[pri:0, instance:ROAutomation.Manufacture@1761e840]" name="checkMobileNumberNumericValidation" duration-ms="2979" started-at="2018-11-13T18:04:22Z" description="Testing Mobile No accepts Number only Validations" finished-at="2018-11-13T18:04:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkMobileNumberNumericValidation -->
-      </class> <!-- ROAutomation.Manufacture -->
+    <test name="Tools QA" duration-ms="15332" started-at="2018-11-28T07:06:36Z" finished-at="2018-11-28T07:06:51Z">
       <class name="ROAutomation.LaunchApp">
-        <test-method status="PASS" signature="Login()[pri:0, instance:ROAutomation.LaunchApp@490d6c15]" name="Login" duration-ms="56046" started-at="2018-11-13T18:02:57Z" description="Login Page" finished-at="2018-11-13T18:03:53Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:ROAutomation.LaunchApp@d2cc05a]" name="Login" duration-ms="13860" started-at="2018-11-28T12:36:36Z" description="Login Page" finished-at="2018-11-28T12:36:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
       </class> <!-- ROAutomation.LaunchApp -->
+      <class name="ROAutomation.vehicle">
+        <test-method status="PASS" signature="ownernamevalidation()[pri:0, instance:ROAutomation.vehicle@39aeed2f]" name="ownernamevalidation" duration-ms="1456" started-at="2018-11-28T12:36:50Z" finished-at="2018-11-28T12:36:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ownernamevalidation -->
+      </class> <!-- ROAutomation.vehicle -->
     </test> <!-- Tools QA -->
   </suite> <!-- Test - Suite -->
 </testng-results>
