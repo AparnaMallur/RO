@@ -5,12 +5,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Constants.Constant;
 import Constants.utility;
 import pageObjects.LoginPage;
-
+@Test(description="Log into Application")
 public class LaunchApp {
 	
 	public static WebDriver driver = null;
@@ -53,5 +54,9 @@ Manufacture.init(driver);
 	 Manufacture.AddManufacturer();
 	
 	  
+  }
+  @BeforeClass
+  public void beforeClass() {
+    System.out.println("BeforeClass");
   }
 }

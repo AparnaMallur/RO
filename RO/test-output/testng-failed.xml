@@ -3,15 +3,19 @@
 <suite name="Failed suite [Test - Suite]">
   <listeners>
     <listener class-name="utility.Listener"/>
-    <listener class-name="utility.TestNGEmailableReport2"/>
   </listeners>
-  <test name="Tools QA(failed)">
+  <test name="RO(failed)">
     <classes>
       <class name="ROAutomation.Manufacture">
         <methods>
           <include name="AddManufacturer"/>
         </methods>
       </class> <!-- ROAutomation.Manufacture -->
+      <class name="ROAutomation.LaunchApp">
+        <methods>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- ROAutomation.LaunchApp -->
     </classes>
-  </test> <!-- Tools QA(failed) -->
+  </test> <!-- RO(failed) -->
 </suite> <!-- Failed suite [Test - Suite] -->
